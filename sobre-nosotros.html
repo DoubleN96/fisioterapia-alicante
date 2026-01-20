@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | AlicanteFisio - Expertos en Fisioterapia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        :root { --primary: #0ea5e9; --primary-dark: #0284c7; --gray-900: #0f172a; --bg-light: #f8fafc; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .nav-link { font-weight: 600; color: var(--gray-900); }
+        .team-card { border: none; border-radius: 20px; overflow: hidden; transition: 0.3s; background: var(--bg-light); }
+        .team-card:hover { transform: translateY(-10px); }
+        .team-img { height: 350px; object-fit: cover; width: 100%; }
+        footer { background: var(--gray-900); color: white; padding: 60px 0 30px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="/">AlicanteFisio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/sobre-nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
+                    <li class="nav-item"><a class="btn btn-primary btn-sm ms-lg-3 text-white" href="https://wa.me/34611031947">Cita Online</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Nuestro Equipo en Alicante</h1>
+                    <p class="lead text-muted">En AlicanteFisio, no solo tratamos síntomas, cuidamos personas. Nuestro equipo de fisioterapeutas colegiados combina años de experiencia clínica con una formación continua en las últimas técnicas.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800" class="img-fluid rounded-4 shadow" alt="Clínica AlicanteFisio">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Manos expertas a tu servicio</h2>
+                <p class="text-muted">Conoce a los profesionales que te ayudarán en tu recuperación</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="team-card text-center">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71f1e358ee?auto=format&fit=crop&q=80&w=600" class="team-img" alt="Dr. Marc Soler">
+                        <div class="p-4">
+                            <h4 class="fw-bold">Marc Soler</h4>
+                            <p class="text-primary fw-600">Director y Fisioterapeuta Deportivo</p>
+                            <p class="small text-muted">Especialista en alto rendimiento y recuperación acelerada de lesiones musculares.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-card text-center">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=600" class="team-img" alt="Dra. Lucía Méndez">
+                        <div class="p-4">
+                            <h4 class="fw-bold">Lucía Méndez</h4>
+                            <p class="text-primary fw-600">Experta en Osteopatía</p>
+                            <p class="small text-muted">Especializada en terapia manual y reequilibrio postural para dolores crónicos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-card text-center">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600" class="team-img" alt="Dr. Sergio Ramos">
+                        <div class="p-4">
+                            <h4 class="fw-bold">Sergio Ramos</h4>
+                            <p class="text-primary fw-600">Especialista en Punción Seca</p>
+                            <p class="small text-muted">Experto en el tratamiento de puntos gatillo y dolor miofascial persistente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4">AlicanteFisio</h4>
+                    <p class="opacity-75">Tu clínica de confianza en el corazón de Alicante.</p>
+                </div>
+                <div class="col-lg-8 text-lg-end">
+                    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 16px;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <span style="color: #94a3b8; font-size: 13px;">Desarrollado por</span>
+                            <a href="https://stratomai.com" target="_blank" style="color: white; font-weight: 600; text-decoration: none;">Stratoma AI</a>
+                        </div>
+                        <button id="stripe-tip-btn" style="background: linear-gradient(135deg, #635BFF 0%, #8B5CF6 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer;">
+                            ¿Te gusta? Compra la web por 100€ y ponle tu dominio
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('stripe-tip-btn').addEventListener('click', () => {
+            window.open('https://buy.stripe.com/14AbJ11DE0bKgO64ry3wQ06', '_blank');
+        });
+    </script>
+</body>
+</html>
