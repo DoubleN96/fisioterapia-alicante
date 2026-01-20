@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlicanteFisio | Clínica de Fisioterapia Avanzada en Alicante</title>
+    <meta name="description" content="Recupera tu bienestar en AlicanteFisio. Especialistas en fisioterapia deportiva, osteopatía y rehabilitación en el centro de Alicante. ¡Pide tu cita hoy!">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="AlicanteFisio | Clínica de Fisioterapia en Alicante">
+    <meta property="og:description" content="Especialistas en fisioterapia avanzada. Trato personalizado y resultados garantizados.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1200">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --primary: #0ea5e9;
+            --primary-dark: #0284c7;
+            --secondary: #0d9488;
+            --almond: #f59e0b;
+            --gray-900: #0f172a;
+            --gray-400: #94a3b8;
+            --bg-light: #f8fafc;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--gray-900);
+            background-color: white;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=1920') center/cover;
+            color: white;
+            padding: 120px 0;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            padding: 14px 30px;
+            font-weight: 600;
+            border-radius: 12px;
+            transition: all 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+
+        .service-card {
+            border: none;
+            border-radius: 20px;
+            padding: 30px;
+            background: var(--bg-light);
+            transition: all 0.3s;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+
+        footer {
+            background-color: var(--gray-900);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            text-decoration: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 80px 0;
+                text-align: center;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physiotherapy",
+      "name": "AlicanteFisio",
+      "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
+      "@id": "",
+      "url": "https://alicantefisio.es",
+      "telephone": "+34 965 00 00 00",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle de la Salud, 12",
+        "addressLocality": "Alicante",
+        "postalCode": "03001",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.3452,
+        "longitude": -0.4815
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <span class="badge bg-info mb-3 px-3 py-2">Fisioterapia en el centro de Alicante</span>
+                    <h1 class="display-3 fw-bold mb-4">Recupera tu ritmo de vida sin dolor</h1>
+                    <p class="lead mb-5 opacity-90">En AlicanteFisio combinamos tecnología de vanguardia con terapia manual para tratar tus lesiones de forma efectiva y personalizada.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="https://wa.me/34611031947" class="btn btn-primary btn-lg"><i class="bi bi-calendar-check me-2"></i>Pedir Cita Ahora</a>
+                        <a href="#servicios" class="btn btn-outline-light btn-lg">Ver Servicios</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Social Proof -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4">
+                    <h3 class="fw-bold text-primary">+10</h3>
+                    <p class="text-muted">Años de experiencia</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <h3 class="fw-bold text-primary">+5k</h3>
+                    <p class="text-muted">Pacientes felices</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <h3 class="fw-bold text-primary">100%</h3>
+                    <p class="text-muted">Personal cualificado</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <h3 class="fw-bold text-primary">4.9/5</h3>
+                    <p class="text-muted">Valoración Google</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="servicios" class="py-5 mt-5">
+        <div class="container text-center">
+            <h2 class="section-title">Nuestros Tratamientos</h2>
+            <div class="row mt-5 g-4 text-start">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="bi bi-activity service-icon"></i>
+                        <h4>Fisioterapia Deportiva</h4>
+                        <p class="text-muted">Tratamiento de lesiones musculares, esguinces y optimización del rendimiento para atletas en Alicante.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="bi bi-person-arms-up service-icon"></i>
+                        <h4>Osteopatía</h4>
+                        <p class="text-muted">Enfoque holístico para reequilibrar tu cuerpo y aliviar tensiones crónicas mediante terapia manual.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="bi bi-droplet service-icon"></i>
+                        <h4>Punción Seca</h4>
+                        <p class="text-muted">Técnica invasiva altamente efectiva para el tratamiento de puntos gatillo y dolor miofascial.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="bi bi-heart-pulse service-icon"></i>
+                        <h4>Rehabilitación</h4>
+                        <p class="text-muted">Programas personalizados para recuperación post-operatoria o accidentes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="bi bi-water service-icon"></i>
+                        <h4>Drenaje Linfático</h4>
+                        <p class="text-muted">Mejora la circulación y reduce edemas mediante masajes suaves y rítmicos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="bi bi-shield-check service-icon"></i>
+                        <h4>Prevención</h4>
+                        <p class="text-muted">Análisis postural y ejercicios específicos para evitar futuras lesiones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light mt-5">
+        <div class="container text-center">
+            <h2 class="section-title">Lo que dicen nuestros pacientes</h2>
+            <div class="row mt-5 g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="fst-italic">"Increíble trato. Llegué con un dolor de espalda crónico y en 3 sesiones ya estoy como nuevo. Profesionales de verdad."</p>
+                        <h6 class="fw-bold mt-3">- Carlos Martínez</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="fst-italic">"La mejor clínica de Alicante. Muy puntuales y las instalaciones están impecables. Muy recomendables."</p>
+                        <h6 class="fw-bold mt-3">- Elena Rodríguez</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="fst-italic">"Atención personalizada y muy profesional. Me ayudaron mucho con mi recuperación tras la cirugía de rodilla."</p>
+                        <h6 class="fw-bold mt-3">- Javier Ruiz</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="section-title text-center">Preguntas Frecuentes</h2>
+                    <div class="mt-5">
+                        <div class="faq-item">
+                            <h5 class="fw-bold">¿Trabajáis con seguros médicos?</h5>
+                            <p class="text-muted">Actualmente trabajamos con las principales aseguradoras (Adeslas, Sanitas, Mapfre). Consúltanos tu caso específico.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h5 class="fw-bold">¿Cuánto dura una sesión?</h5>
+                            <p class="text-muted">Las sesiones suelen durar entre 45 y 60 minutos, dependiendo del tratamiento necesario.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h5 class="fw-bold">¿Dónde estáis ubicados?</h5>
+                            <p class="text-muted">Estamos en el centro de Alicante, cerca de la Plaza de los Luceros. Fácil acceso en TRAM y bus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/34611031947" class="whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4">AlicanteFisio</h4>
+                    <p class="opacity-75">Tu clínica de confianza en el corazón de Alicante. Cuidamos de tu salud con pasión y profesionalidad.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Contacto</h5>
+                    <p class="opacity-75"><i class="bi bi-geo-alt me-2"></i> Calle de la Salud, 12, 03001 Alicante</p>
+                    <p class="opacity-75"><i class="bi bi-telephone me-2"></i> +34 965 00 00 00</p>
+                    <p class="opacity-75"><i class="bi bi-envelope me-2"></i> info@alicantefisio.es</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Horario</h5>
+                    <p class="opacity-75">Lunes - Viernes: 09:00 - 21:00</p>
+                    <p class="opacity-75">Sábados: 09:00 - 14:00</p>
+                    <p class="opacity-75">Domingos: Cerrado</p>
+                </div>
+            </div>
+
+            <!-- Branding Stratoma AI (OBLIGATORIO) -->
+            <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="color: var(--gray-400); font-size: 13px;">Desarrollado por</span>
+                    <a href="https://stratomai.com" target="_blank" style="color: white; font-weight: 600; text-decoration: none; font-size: 14px;">Stratoma AI</a>
+                    <a href="https://wa.me/34611031947" target="_blank" style="color: var(--gray-400); font-size: 13px; text-decoration: none; display: flex; align-items: center; gap: 6px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.031 6.172c-2.203 0-4.007 1.797-4.007 3.991 0 2.193 1.804 3.99 4.007 3.99 2.203 0 4.007-1.797 4.007-3.99 0-2.194-1.804-3.991-4.007-3.991zm0 1.562c1.34 0 2.445 1.108 2.445 2.429 0 1.32-1.105 2.428-2.445 2.428-1.34 0-2.445-1.108-2.445-2.428.001-1.321 1.105-2.429 2.445-2.429zm0-4.562c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 18.438c-4.661 0-8.438-3.777-8.438-8.438s3.777-8.438 8.438-8.438 8.438 3.777 8.438 8.438-3.777 8.438-8.438 8.438z"/>
+                        </svg>
+                        +34 611 03 19 47
+                    </a>
+                </div>
+                
+                <button id="stripe-tip-btn" style="background: linear-gradient(135deg, #635BFF 0%, #8B5CF6 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: all 0.3s;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                    </svg>
+                    ¿Te gusta? Compra la web por 100€ y ponle tu dominio
+                </button>
+            </div>
+            
+            <p class="text-center mt-4 opacity-50" style="font-size: 12px;">&copy; 2026 AlicanteFisio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const stripeTipBtn = document.getElementById('stripe-tip-btn');
+        if (stripeTipBtn) {
+            stripeTipBtn.addEventListener('click', () => {
+                window.open('https://buy.stripe.com/14AbJ11DE0bKgO64ry3wQ06', '_blank');
+            });
+        }
+    </script>
+</body>
+</html>
